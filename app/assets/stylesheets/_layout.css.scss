@@ -1,0 +1,22 @@
+body {
+	padding-top: 50px;
+}
+
+#primary,
+#secondary {
+	padding-top: 20px;
+}
+
+#secondary {
+	background-color: $navbar-inverse-bg;
+}
+
+@media(min-width: $screen-md-min) {
+	#secondary {
+		position: fixed;
+		z-index: 2000;
+		margin-top: -1px;
+		height: 100%;
+		overflow-y: auto;
+	}
+}
