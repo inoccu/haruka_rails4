@@ -48,3 +48,6 @@ gem 'devise-i18n-views'
 
 # Use bootstrap
 gem 'bootstrap-sass', '~> 3.2.0'
+
+# Use doorkeeper
+gem 'doorkeeper'

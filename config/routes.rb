@@ -1,5 +1,15 @@
 Rails.application.routes.draw do
+  use_doorkeeper
+
+  namespace :api do
+    namespace :v1 do
+      resources :profiles
+      get '/me' => 'credentials#me'
+    end
+  end
+
   devise_for :users
+  
   get 'pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
